@@ -1,0 +1,233 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 0.6rem;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------------ */
+/* 2 nút hành động    */
+/* ------------------ */
+.btn-zalo {
+  display: flex;
+  gap: 15px;
+  margin-left: 0;
+}
+
+/* Base style cho nút */
+.zalo {
+  flex: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Nút Liên hệ ngay (ghost) */
+.btn-contact {
+  background: #fff;
+  color: #0071e3;
+  border-color: #0071e3;
+}
+.btn-contact:hover {
+  background: #0071e3;
+  color: #fff;
+}
+
+/* Nút Đăng kí lái thử (primary) */
+.btn-testdrive {
+  background: #0071e3;
+  color: #fff;
+}
+.btn-testdrive:hover {
+  background: #005bb5;
+  color: #fff;
+}
+
+/* Responsive cho tablet/mobile */
+@media (max-width: 768px) {
+  .btn-zalo {
+    flex-direction: flex;
+    width: 50%;
+    gap: 10px;
+  }
+
+  .zalo {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ------------------ */
+/* Logo               */
+/* ------------------ */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #1f2640; 
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: flex;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 0.75rem; 
+}
+
+/* ------------------ */
+/* Navigation         */
+/* ------------------ */
+.nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: #14b8a6; 
+}
+
+/* ------------------ */
+/* Dropdown           */
+/* ------------------ */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 400px;       
+  max-width: 90vw;        
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.nav-item:last-child .dropdown {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000; 
+}
+
+.dropdown-item {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background: #f9fafb; 
+}
+
+.dropdown-label {
+  font-weight: 600;
+}
+
+.dropdown-desc {
+  font-size: 0.875rem;
+  color: #6b7280; 
+}
+
+/* ------------------ */
+/* Mobile menu button */
+/* ------------------ */
+.mobile-menu-btn {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  border-top: 1px solid #e5e7eb;
+  background: white;
+}
+
+.mobile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem; 
+}
+
+.mobile-section {
+  padding: 0.25rem 0; 
+}
+
+.mobile-title {
+  font-weight: 600;
+  padding: 0.5rem 0; 
+}
+
+.mobile-link {
+  display: block;
+  padding: 0.5rem 0; 
+  color: #4b5563; 
+  text-decoration: none;
+}
+
+.mobile-link:hover {
+  color: #111827;
+}

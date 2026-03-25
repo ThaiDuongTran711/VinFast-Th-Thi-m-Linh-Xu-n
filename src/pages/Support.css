@@ -1,0 +1,68 @@
+.support-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+.support-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0a3d62;
+}
+
+.support-container h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0a3d62;
+  border-left: 5px solid #0a3d62;
+  padding-left: 10px;
+}
+
+.support-container h2 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1e3799;
+}
+
+.support-container h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #3c6382;
+}
+
+.support-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.support-container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.support-container li {
+  margin-bottom: 0.4rem;
+}
+
+.support-container hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.support-container strong {
+  color: #e55039;
+}
+
+.support-container em {
+  font-style: italic;
+  color: #555;
+}

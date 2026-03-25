@@ -1,0 +1,209 @@
+.vehicle-detail-page {
+  padding: 20px;
+}
+
+/* Bố cục chính */
+.detail-main {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Hình ảnh chính hoặc slider */
+.detail-image {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.detail-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Căn chỉnh slider react-slick */
+.slick-slider {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #0071e3;
+}
+.slick-dots li.slick-active button:before {
+  color: #c00;
+}
+
+/* Thông tin xe */
+.detail-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.detail-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.detail-price {
+  color: #c00;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.detail-desc {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.detail-spec {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.detail-spec li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Đặc điểm nổi bật */
+.detail-features {
+  margin: 20px 0;
+}
+
+.detail-features h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.detail-features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-features li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.detail-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0071e3;
+  font-weight: bold;
+}
+
+/* Nút lái thử */
+.btn-reserve {
+  padding: 12px 24px;
+  background: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-reserve:hover {
+  background: #005bb5;
+}
+
+/* Modal form lái thử */
+.reserve-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.reserve-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 430px;
+  position: relative;
+}
+
+.reserve-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.reserve-form form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.reserve-form form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reserve-form form button {
+  margin-right: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Nút đóng modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ddd;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  background: #bbb;
+}
+
+/* Nút mũi tên slider */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 2rem;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  user-select: none;
+}
+
+.custom-arrow:hover {
+  color: #c00;
+}
+
+.custom-arrow-prev {
+  left: 2px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.custom-arrow-next {
+  right: 2px;
+}

@@ -1,0 +1,67 @@
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem; 
+}
+
+.about-title {
+  font-size: 1.875rem; 
+  font-weight: 700;    
+  margin-bottom: 0.5rem; 
+}
+
+.about-desc {
+  color: #4B5563; 
+  max-width: 42rem; 
+}
+
+.about-grid {
+  margin-top: 2rem; 
+  display: grid;
+  gap: 1.5rem; 
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- SỬA Ở ĐÂY --- */
+.about-card {
+  position: relative;
+  height: 220px;
+  border-radius: 1rem; 
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15); 
+}
+
+/* overlay cho text */
+.about-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.about-card-title {
+  font-weight: 600; 
+  font-size: 1.25rem; 
+  margin-bottom: 0.25rem;
+}
+
+.about-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

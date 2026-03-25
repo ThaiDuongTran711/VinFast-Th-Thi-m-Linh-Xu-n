@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* { scroll-behavior: smooth; }
+.container { @apply max-w-7xl mx-auto px-4; }
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+.carousel > * {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+body{
+  overflow-x: hidden;
+}
+
+.header, .nav, .container {
+  overflow: visible; 
+}

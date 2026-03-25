@@ -1,0 +1,66 @@
+.product-card {
+  background: #fff;
+  border: 1px solid #e5e7eb; 
+  border-radius: 1rem; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;   
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%; /* cho card luôn stretch đầy hàng grid */
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12); 
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* sửa từ '200px' sang tỉ lệ hợp lệ */
+  object-fit: cover;         
+  display: block;
+}
+
+.product-body {
+  padding: 1rem; 
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* đẩy footer xuống sát đáy, giúp chiều cao card đều */
+}
+
+.product-name {
+  font-weight: 600; 
+  font-size: 1.125rem; 
+  margin-bottom: 0.25rem;
+}
+
+.product-spec {
+  font-size: 0.875rem; 
+  color: #6b7280; 
+  margin-bottom: 1rem;
+}
+
+.product-footer {
+  margin-top: auto;          
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-weight: 700; 
+  font-size: 1rem;
+  color: #d32f2f;            
+}
+
+.product-link {
+  color: #14b8a6; 
+  font-weight: 500; 
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+  color: #0d9488;
+}
