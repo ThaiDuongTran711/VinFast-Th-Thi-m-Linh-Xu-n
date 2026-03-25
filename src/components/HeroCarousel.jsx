@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './HeroCarousel.css'
 
 const slides = [
-  { video: "/images/The company behind VinFast electric cars.mp4" },
+  { img: "/images/ramatlachong.webp" },
   { id: 1, title: "Miễn Phí Sạc Lên Tới 3 Năm", desc: "Ưu đãi lớn chỉ tới 31/03/2026", cta: "Khám phá xe", to: "/vehicles", img: "/images/mienphisacpin.webp" },
   { id: 2, title: "Mãnh Liệt Vì Tương Lai Xanh", desc: "Ưu đãi lên tới 10%  khi mua xe điện VinFast", cta: "Tìm hiểu hỗ trợ", to: "/support", img: "/images/thuxangdoidien2.webp" },
   { id: 3, title: "Tin nóng mỗi ngày", desc: "Cập nhật sản phẩm và ưu đãi", cta: "Xem tin tức", to: "/news", img: "/images/ramatlachong.webp" },

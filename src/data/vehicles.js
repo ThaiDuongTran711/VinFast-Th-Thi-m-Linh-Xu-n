@@ -318,7 +318,7 @@ const luxuryVehicles = [
       "Tốc độ tối đa:": "200 km/h",
       "Số chỗ ngồi:": "4 chỗ ngồi, 1 chỗ phụ",
     },
-    gallery: ["/images/lachong (7).jpg", "/images/lachong (4).jpg", "/images/lachong (5).jpg", "/images/lachong (6).jpg", "/images/lachong (2).jpg", "/images/lachong (1).jpg", "/images/lachong (3).jpg"],
+    gallery: ["/images/lachong (7).jpg", "/images/lachong (4).jpg", "/images/lachong (2).jpg"],
     features: [
       "Thiết kế đậm bản sắc Việt",
       "Nội thất siêu sang",
@@ -341,7 +341,7 @@ const luxuryVehicles = [
       "Tốc độ tối đa:": "Chưa công bố",
       "Số chỗ ngồi:": "5 chỗ ngồi",
     },
-    gallery: ["/images/lachong900sanhbia.jpg", "/images/lachong900s.jpg", "/images/lachong900s (3).webp", "/images/lachong900s (4).webp", "/images/lachong900s (2).jpg", "/images/lachong900s (1).jpg"],
+    gallery: ["/images/lachong900sanhbia.jpg", "/images/lachong900s (3).webp", "/images/lachong900s (4).webp", "/images/lachong900s (2).jpg", "/images/lachong900s (1).jpg"],
     features: [
       "Khoang lái sang trọng với thiết kế tinh tế ",
       "Hệ thống ghế không trọng lực giúp nâng đỡ cơ thể tối ưu",
@@ -364,7 +364,7 @@ const luxuryVehicles = [
       "Tốc độ tối đa:": "Chưa công bố",
       "Số chỗ ngồi:": "5 chỗ ngồi",
     },
-    gallery: ["/images/lachong800sanhbia.jpg", "/images/lachong800s (4).webp", "/images/lachong800s.jpg", "/images/lachong800s (1).jpg", "/images/lachong800s (2).jpg", "/images/lachong800s (3).jpg"],
+    gallery: ["/images/lachong800sanhbia.jpg", "/images/lachong800s (4).webp", "/images/lachong800s (1).jpg", "/images/lachong800s (2).jpg", "/images/lachong800s (3).jpg"],
     features: [
       "Tiện nghi sang trọng",
       "Trục cơ sở dài 3.175 mm",
